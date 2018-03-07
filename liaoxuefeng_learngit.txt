@@ -1,4 +1,17 @@
 1.创建版本库
 git init
 git add <filename>
-git commit -m "comment"
+git commit -m "message"
+2.时光机穿梭
+git status
+git diff <filename>
+git diff HEAD -- <filename>
+2.1版本回退：
+git log
+git reset --hard HEAD^
+git reset HEAD <filename>
+git reflog
+2.2撤销修改
+git checkout -- <filename>
+2.3删除文件
+git rm <filename>
