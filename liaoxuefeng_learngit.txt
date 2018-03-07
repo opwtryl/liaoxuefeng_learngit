@@ -51,3 +51,7 @@ git tag -d <tagname>
 git push origin <tagname>
 git push origin --tags
 git push origin :refs/tags/<tagname>
+6.自定义Git
+git check-ignore -v <filename>
+git config --global alias.st status
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
