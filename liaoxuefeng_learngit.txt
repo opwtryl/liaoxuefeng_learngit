@@ -42,3 +42,12 @@ git clone  git@github.com:yourname/<filename>.git
 git checkout -b <your_branch> origin/<remote_branch>
 git branch --set-upstream-to=origin/<remote_branch>  <your_branch>
 git pull
+5.标签管理
+git tag <tagname>
+git tag <tagname> <commit id>
+git show <tagname>
+git tag -a <tagname> -m "message" <commit id>
+git tag -d <tagname>
+git push origin <tagname>
+git push origin --tags
+git push origin :refs/tags/<tagname>
