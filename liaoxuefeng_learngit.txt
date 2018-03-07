@@ -8,6 +8,7 @@ git diff <filename>
 git diff HEAD -- <filename>
 2.1版本回退：
 git log
+git log --graph --pretty=oneline --abbrev-commit
 git reset --hard HEAD^
 git reset HEAD <filename>
 git reflog
@@ -18,5 +19,26 @@ git rm <filename>
 3.远程仓库
 ssh-keygen -t rsa -C "youremail@example.com"
 git remote add origin git@github.com:yourname/<filename>.git
+git remote -v
 git push -u origin master
 git clone git@github.com:yourname/<filename>.git
+4.分支管理
+4.1创建与合并分支：
+git checkout -b <branchname>
+git branch <branchname>
+git checkout <branchname>
+git merge <branchname>
+git merge --no-ff -m "message" <branchname>
+git branch -d <branchname>
+4.2Bug分支
+git stash
+git stash list
+git stash apply
+git stash drop
+git stash pop
+4.3多人协作
+git push origin <your_branch>
+git clone  git@github.com:yourname/<filename>.git
+git checkout -b <your_branch> origin/<remote_branch>
+git branch --set-upstream-to=origin/<remote_branch>  <your_branch>
+git pull
